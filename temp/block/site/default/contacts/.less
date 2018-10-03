@@ -1,0 +1,123 @@
+.kontakty-panel__{
+	&block{	
+		position: relative;
+	}
+	&panel{
+	}
+	&map{
+		width: 100%;
+		height: 300px;
+		@media @media-point-xs {
+			height: 250px;
+		}
+		@media @media-point-tablet {
+			height: 500px;
+		}
+		@media @media-point-screen {
+			max-height: 870px;
+			min-width: 500px;
+			height: 100vh;
+		}
+	}
+	&heading{
+		margin-bottom: 30px;
+		@media @media-point-screen {
+			margin-bottom: 2.8vw;
+		}
+	}
+	&item-group{
+		padding-bottom: 30px;
+		@media @media-point-screen {
+			padding-top: 3vw;
+			padding-bottom: 3vw;
+		}
+	}
+	&item{
+		margin-bottom: 20px;
+		@media @media-point-screen {
+			margin-bottom: 1.2vw;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.kontakty-card__{
+	&card{}
+	&post{
+		color: @b-color-a;
+		font-weight: 700;
+		font-size: @b-fs + 4;
+		line-height: @b-lh - 2;
+		margin-bottom: 10px;
+	}
+	&heading{
+		color: @b-color-h;
+		font-weight: 500;
+		font-size: @b-fs + 4;
+		margin-bottom: 20px;
+	}
+	&item{
+		margin-bottom: 10px;
+	}
+	&item-heading{
+		color: @white-bd;
+		font-size: @b-fs + 2;
+		line-height: @b-lh - 4;
+		font-weight: 700;
+	}
+	&item-note{
+		&, a[href^="tel:"], a[href^="mailto:"]{
+			color: @b-color;
+		}
+	}
+}
+.kontakty-item__{
+	&item{
+		position: relative;
+		font-size: @b-fs + 4;
+		line-height: @b-lh + 6;
+		//
+		&, &:hover, &:focus{
+			color: @b-color;
+		}
+		span{
+			font-weight: 700;
+			color: @green-dark;
+		}
+		&.is--icon{
+			padding-left: 40px;
+		}
+	}
+	&heading{
+		color: @b-color-a;
+		.calcFontSize(20, 28, 320, 1680);
+		.calcLineHeight(24, 32, 320, 1680);
+		font-weight: 400;
+	}
+	&link{
+		display: block;
+		a[href^="mailto:"]&,
+		a[href^="tel:"]&,
+		&, &:hover, &:focus{
+			color: @b-color-h;
+		}
+		&.is--tel{
+			display: inline-block;
+		}
+	}
+	&icon{ 
+		position: absolute;
+		top: 50%; 
+		left: 0;
+		transform: translateY(-50%);
+		transition: @trs-site;
+		width: 30px;
+		height: 30px;
+		border: 2px solid @b-color;
+		border-radius: 50%;
+		color: @b-color;
+		padding: 6px;
+		svg{display: block;}
+	}
+}

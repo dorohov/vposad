@@ -1,0 +1,106 @@
+<main class="{{content_prefix}}panel">
+	<div class="{{content_prefix}}container container  is--full">
+		<div class="{{content_prefix}}elem  is--xl">			
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--map">
+					<div class="{{content_prefix}}map" id="map-2gis" data-map='{"center" : [52.89, 36.022], "zoom" : 16, "placemarks" : [{"coord" : [52.889959, 36.021187], "title": "Вятский посад"}]}' ></div>
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--note">
+					<div class="{{content_prefix}}elem  {{content_mod}}  is--inner">
+						[[azbntple 
+							tpl="/src/block/site/default/page-header/panel.html"
+							block_prefix="page-header__" 
+							block_mod="{{block_heading_mod}}"
+							block_heading_level="{{block_heading_level}}"
+							block_heading="{{block_heading}}"
+						]]	
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/card-icon.html"
+							block_prefix="kontakty-item__" 
+							block_mod="is--icon  is--address"
+							block_icon="contacts-address"
+							block_heading="{{contacts.address}}"
+						]]	
+						<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+							<div class="{{content_prefix}}cols cols  {{content_mod}}  is--card">
+								[[azbntple 
+									tpl="/src/block/site/default/contacts/card-label.html"
+									block_prefix="kontakty-item__" 
+									block_mod="is--label"
+									block_icon="contacts-address"
+									block_heading="Духовный Православный Центр"
+									block_email="{{contacts.email}}"
+									block_phone="+7 (919) 206-57-99"
+									block_phone_tel="+79192065799"
+								]]	
+							</div>
+							<div class="{{content_prefix}}cols cols  {{content_mod}}  is--card">
+								[[azbntple 
+									tpl="/src/block/site/default/contacts/card-label.html"
+									block_prefix="kontakty-item__" 
+									block_mod="is--label"
+									block_icon="contacts-address"
+									block_heading="Православная гимназия"
+									block_email="gymnasium@vposad.ru"
+									block_phone="{{contacts.phone}}"
+									block_phone_tel="+74862592063"
+								]]	
+							</div>
+							<div class="{{content_prefix}}cols cols  {{content_mod}}  is--card">
+								[[azbntple 
+									tpl="/src/block/site/default/contacts/card-label.html"
+									block_prefix="kontakty-item__" 
+									block_mod="is--label"
+									block_icon="contacts-address"
+									block_heading="Администрация центра"
+									block_email="adm@vposad.ru"
+									block_phone="+7 (4862) 59-20-64"
+									block_phone_tel="+74862592064"
+								]]	
+							</div>
+							<div class="{{content_prefix}}cols cols  {{content_mod}}  is--card">
+								[[azbntple 
+									tpl="/src/block/site/default/contacts/card-label.html"
+									block_prefix="kontakty-item__" 
+									block_mod="is--label"
+									block_icon="contacts-address"
+									block_heading="Информационно-культурный отдел"
+									block_email="iko@vposad.ru"
+									block_phone="{{contacts.phone}}"
+									block_phone_tel="{{contacts.phone_tel}}"
+								]]	
+							</div>
+						</div>
+						<div class="{{content_prefix}}btn  {{content_mod}}">
+							[[azbntple 
+								tpl="/src/block/site/default/button/link.html"
+								button_prefix="btn__" 
+								button_mod="  "
+								button_link="{{page.reviews}}"
+								button_name="Вопрос настоятелю"
+							]]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{content_prefix}}elem">
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/group.html" 
+				header_prefix="page-header__" 
+				header_mod="is--contacts-block"
+				header_level="h2"
+				header="Как добраться"
+				header_small_level="div"
+				header_small="Для гостей центра предусмотрена парковка."
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/tabs/panel-contacts.html"
+				block_prefix="tabs__" 
+				block_mod="  "
+				content_prefix="{{content_prefix}}"
+				content_mod="{{content_mod}}"
+			]]
+		</div>		
+	</div>
+</main>

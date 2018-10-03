@@ -1,0 +1,50 @@
+{
+	"contacts":{
+		"name":"Вятский Посад",
+		"domain":"vposad.ru",
+		"domain_link":"http://www.vposad.ru/",
+		"color":"#E9B30F",
+		"agreement_page":"agreement",
+		"copyright":"&copy; Орловская митрополия Русской Православной Церкви Московского Патриархата",
+		"email":"info@vposad.ru",
+		"phone":" 8 (4862) 59-20-63",  
+		"phone_tel":"+74862592063",   
+		"clock":"<p>Пн-Пт: 8:00-17:00. Перерыв 13:00-14:00</p><p>Сб-Вс: выходной</p>", 
+		"address":"Орл. обл., п.&nbsp;Вятский Посад, ул.&nbsp;Южная&nbsp;1A"
+	},
+	"soc":{
+		"vk":"https://vk.com/public169075699",
+		"fb":"https://www.facebook.com/vposad",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/",
+		"yb":"https://www.youtube.com/channel/UCIpTj44m2udXyBQz-P5ofUg"
+	},
+	"page":{
+		"index":"/",
+		"about":"/about.html",
+		"history":"/history.html",
+		"artel":"/artel.html",
+		"temple":"/temple.html",
+		"schedule":"/schedule.html",
+		"scheme":"/scheme.html",
+		"person":"/person.html",
+		"person_card":"/person-card.html",
+		"person_iliy":"/person-iliy.html",
+		"tour":"/tour.html",
+		"news":"/news.html",
+		"news_card":"/news-card.html",
+		"reviews":"/reviews.html",
+		"contacts":"/contacts.html",
+		"404":"/404.html",
+		"sitemap":"/sitemap.html",
+		"style":"/style.html",
+		"agreement":"/agreement.html"
+	},	                           
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon",
+	"url-path-docs":"/docs"
+}

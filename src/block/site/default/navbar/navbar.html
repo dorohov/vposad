@@ -1,0 +1,203 @@
+<nav class="{{navbar_prefix}}block  {{navbar_mod}}">
+	<div class="{{navbar_prefix}}inner">
+		<div class="{{navbar_prefix}}header">
+			<div class="container {{navbar_prefix}}container">
+				<div class="row {{navbar_prefix}}row-header ">
+					<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+						<div class="{{navbar_prefix}}hamburger">
+							<button class="{{navbar_prefix}}hamburger-card" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="{{navbar_prefix}}hamburger-card-inner">
+									<span class="{{navbar_prefix}}hamburger-card-line  is--left"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--center"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--right"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--brand">
+						<a class="{{navbar_prefix}}brand  {{navbar_scrollto}}" href="{{page.index}}">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+						</a>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--address">
+						<div class="{{navbar_prefix}}address">
+							{{contacts.address}}
+						</div>
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--navbar">
+						<ul class="{{navbar_prefix}}nav">
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Главная" 
+								navbar_link="{{page.index}}"
+								navbar_mod="is--index"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="О центре" 
+								navbar_link="{{page.about}}"
+								navbar_mod="  "
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Персоналии" 
+								navbar_link="{{page.person}}"
+								navbar_mod="  "
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Экскурсии" 
+								navbar_link="{{page.tour}}"
+								navbar_mod="  "
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="События" 
+								navbar_link="{{page.news}}"
+								navbar_mod="  "
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Контакты" 
+								navbar_link="{{page.contacts}}"
+								navbar_mod="  "
+							]]	
+						</ul>							
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--soc">
+						[[azbntple 
+							tpl="/src/block/site/default/social/panel.html" 
+							block_prefix="social__" 
+							block_mod="is--navbar" 
+						]]
+					</div>
+					<div class="cols {{navbar_prefix}}cols-header  is--icon">
+						<a href="{{page.contacts}}" class="{{navbar_prefix}}icon">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-location" ]]
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="{{navbar_prefix}}collapse" >
+			<div class="{{navbar_prefix}}collapse-inner">
+				<div class="container {{navbar_prefix}}container">	
+					<div class="{{navbar_prefix}}collapse-navbar">	
+						<div class="row {{navbar_prefix}}collapse-row">
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar  is--full">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse-about.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="О центре" 
+									navbar_num="01" 
+									navbar_link="{{page.about}}"
+									navbar_mod="  "
+								]]	
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse-person.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Персоналии" 
+									navbar_num="02" 
+									navbar_link="{{page.person}}"
+									navbar_mod="  "
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Экскурсии" 
+									navbar_num="03" 
+									navbar_link="{{page.tour}}"
+									navbar_mod="  "
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse-news.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="События" 
+									navbar_num="04" 
+									navbar_link="{{page.news}}"
+									navbar_mod="  "
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Контакты" 
+									navbar_num="05" 
+									navbar_link="{{page.contacts}}"
+									navbar_mod="  "
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar  is--btn">
+								[[azbntple 
+									tpl="/src/block/site/default/button/link.html"
+									button_prefix="btn__" 
+									button_mod="is--navbar"
+									button_link="{{page.reviews}}"
+									button_name="Вопрос настоятелю"
+								]]
+							</div>
+						</div>
+					</div>
+					<div class="{{navbar_prefix}}collapse-footer">
+						<div class="row {{navbar_prefix}}collapse-row  is--footer">
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--footer  is--copyright">
+								<div class="{{navbar_prefix}}copyright">
+									{{contacts.copyright}}
+								</div>
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--footer">
+								[[azbntple 
+									tpl="/src/block/site/default/social/card-link.html" 
+									block_prefix="social-contacts__" 
+									block_mod="is--navbar"
+									block_heading="{{contacts.email}}"
+									block_link="mailto:{{contacts.email}}"
+									block_icon="contacts-email"
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--footer">
+								[[azbntple 
+									tpl="/src/block/site/default/social/card.html" 
+									block_prefix="social-contacts__" 
+									block_mod="is--navbar"
+									block_heading="{{contacts.address}}"
+									block_icon="contacts-address"
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--footer">
+								[[azbntple 
+									tpl="/src/block/site/default/social/card-link.html" 
+									block_prefix="social-contacts__" 
+									block_mod="is--navbar"
+									block_heading="{{contacts.phone}}"
+									block_link="tel:{{contacts.phone_tel}}"
+									block_icon="contacts-tel"
+								]]
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--footer">
+								[[azbntple 
+									tpl="/src/block/site/default/social/panel.html" 
+									block_prefix="social__" 
+									block_mod="is--navbar" 
+								]]
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

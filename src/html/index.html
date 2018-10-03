@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll  is--index"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-news.html"
+			content_prefix="content-block__"  
+			content_mod="is--index-news"
+			content_id="news-block"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Предстоящие события"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-gallery.html"
+			content_prefix="content-block__"   
+			content_mod="is--gallery-index"
+			content_id="gallery-block"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-panorama.html"
+			content_prefix="content-block__"  
+			content_mod="is--index-panorama"
+			content_id="panorama-block"
+			block_heading_mod="is--index-heading  is--index-panorama"
+			block_heading_level="h1"
+			block_heading="Вятский Посад"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/form/block-question.html" 
+			block_id="form-question"
+			block_prefix="form-panel__"
+			block_mod="is--bg  is--form"
+			block_bg="{{url-path-img}}/temp/bg-form.jpg"
+			form_prefix="form__"
+			form_id="f_question"
+			form_mod="is--question" 
+			form_color="  "
+			form_heading="Задать вопрос"
+			form_heading_small="Настоятелю Храма Сретения Господня"
+			form_heading_mod="is--form-block"
+			form_btn_name="Отправить"
+			form_btn_mod="is--icon  is--arrow"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+	</body>
+</html>

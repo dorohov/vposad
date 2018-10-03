@@ -1,0 +1,44 @@
+<main class="{{content_prefix}}panel">
+	<div class="{{content_prefix}}container container  is--dafault-page  {{content_mod}}  is--full">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+		]]
+		<div class="{{content_prefix}}elem  {{content_mod}}  text__block">
+			<ul class="{{content_prefix}}sitemap  {{content_mod}}">
+				<li><a href="{{page.index}}" target="_blank">Главная страница</a></li>
+				<li><a href="{{page.about}}" target="_blank">О центре</a>
+					<ul class="{{content_prefix}}sitemap  {{content_mod}}">
+						<li><a href="{{page.history}}" target="_blank">История центра</a></li>
+						<li><a href="{{page.temple}}" target="_blank">Храм</a></li>
+						<li><a href="{{page.artel}}" target="_blank">Православная артель</a></li>
+						<li><a href="{{page.reviews}}" target="_blank">Настоятель</a></li>
+						<li><a href="{{page.schedule}}" target="_blank">Расписание богослужений</a></li>
+						<li><a href="{{page.scheme}}" target="_blank">Интерактивная схема центра <b>(доверстать)</b></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="{{page.person}}" target="_blank">Персоналии</a>
+					<ul class="{{content_prefix}}sitemap  {{content_mod}}">
+						<li><a href="{{page.person_card}}" target="_blank">Карточка</a></li>
+						<li><a href="{{page.person_iliy}}" target="_blank">Схиархимандрит Илий <b>(доверстать)</b></a></li>
+					</ul>
+				</li>
+				<li><a href="{{page.tour}}" target="_blank">Экскурсии <b>(доверстать)</b></a></li>
+				<li>
+					<a href="{{page.news}}" target="_blank">События</a>
+					<ul class="{{content_prefix}}sitemap  {{content_mod}}">
+						<li><a href="{{page.news_card}}" target="_blank">Карточка</a></li>
+					</ul>
+				</li>
+				<li><a href="{{page.contacts}}" target="_blank">Контакты</a></li> 
+				<li><a href="{{page.404}}" target="_blank">404</a></li> 
+				<li><a href="{{page.agreement}}" target="_blank"> Пользовательское соглашение</a></li> 
+				<li><a href="{{page.style}}" target="_blank">Страница стилей</a></li>
+			</ul>
+		</div>
+	</div>
+</main>
