@@ -7,10 +7,10 @@
 		"agreement_page":"agreement",
 		"copyright":"&copy; Орловская митрополия Русской Православной Церкви Московского Патриархата",
 		"email":"info@vposad.ru",
-		"phone":" 8 (4862) 59-20-63",  
+		"phone":" +7 (4862) 59-20-63",  
 		"phone_tel":"+74862592063",   
 		"clock":"<p>Пн-Пт: 8:00-17:00. Перерыв 13:00-14:00</p><p>Сб-Вс: выходной</p>", 
-		"address":"Орл. обл., п.&nbsp;Вятский Посад, ул.&nbsp;Южная&nbsp;1A"
+		"address":"Орл. обл., п.&nbsp;Вятский Посад, ул.&nbsp;Южная,&nbsp;1A"
 	},
 	"soc":{
 		"vk":"https://vk.com/public169075699",
@@ -36,6 +36,7 @@
 		"news_card":"/news-card.html",
 		"reviews":"/reviews.html",
 		"contacts":"/contacts.html",
+		"gallery":"/gallery.html",
 		"404":"/404.html",
 		"sitemap":"/sitemap.html",
 		"style":"/style.html",

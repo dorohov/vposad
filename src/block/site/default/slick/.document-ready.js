@@ -21,7 +21,8 @@ $(function() {
 		dots: false,
 		//infinite: true, 
 		autoplay: true,
-  		autoplaySpeed: 4000,
+		// изменено с 4000 до 3000
+  		autoplaySpeed: 3000,
 		prevArrow: prevArrow,
 		nextArrow: nextArrow,
 		fade: true

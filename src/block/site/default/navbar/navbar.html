@@ -54,11 +54,12 @@
 								navbar_link="{{page.tour}}"
 								navbar_mod="  "
 							]]	
+							<!-- ИЗМЕНЕНО-->
 							[[azbntple 
 								tpl="/src/block/site/default/navbar/item.html" 
 								navbar_prefix="navbar__" 
-								navbar_name="События" 
-								navbar_link="{{page.news}}"
+								navbar_name="Фотогалерея" 
+								navbar_link="{{page.gallery}}"
 								navbar_mod="  "
 							]]	
 							[[azbntple 
@@ -130,12 +131,23 @@
 									navbar_mod="  "
 								]]
 							</div>
+							<!-- изменено добавлено-->
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item-collapse.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Фотогалерея" 
+									navbar_num="05" 
+									navbar_link="{{page.gallery}}"
+									navbar_mod="  "
+								]]
+							</div>
 							<div class="cols {{navbar_prefix}}collapse-cols cols  is--navbar">
 								[[azbntple 
 									tpl="/src/block/site/default/navbar/item-collapse.html" 
 									navbar_prefix="navbar__" 
 									navbar_name="Контакты" 
-									navbar_num="05" 
+									navbar_num="06" 
 									navbar_link="{{page.contacts}}"
 									navbar_mod="  "
 								]]
