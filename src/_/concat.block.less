@@ -238,7 +238,7 @@
     		}
 		}
 	}
-	&row{
+	&row{				
 	}		  
 	&cols{
 		&.is--elem-1{
@@ -1088,6 +1088,12 @@
 					}
 				}
 			}
+			//изменено добавлен селектор атрибута
+			[data-slider-slick-album="slick-slider"] &{ 
+				@media @media-point-notsmart {
+					top: 46%;
+				}				
+			}
 		}
 		&.is--gallery{
 			background: none;
@@ -1157,6 +1163,13 @@
 				}
 			}			
 		}
+		&.is--album {//изменено добавлен класс
+			transition: @trs-site;
+			position: relative;
+			z-index: 20;			
+			background-color: #F2F2F2;
+			color: #522100;
+		}
 	}
 	&inner{
 		transition: @trs-site;
@@ -1201,7 +1214,8 @@
 			}
 		}
 	}
-	&bg{
+	//изменено через запятую добавлен класс &bg-photo
+	&bg, &bg-photo{ 
 		transition: @trs-site;		
 		position: absolute;
 		z-index: 5;
@@ -1222,7 +1236,30 @@
 			opacity: 1;
 		}
 	}
-	&view{		
+	&bg-photo{//изменено добавлен класс
+		background-color: rgba(255,255,255,0.7);
+	}
+	&bg-album {//изменено добавлен класс
+		transition: @trs-site;		
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		padding: 20px;
+		background-color: fadeout(@b-color-a, 20%);
+		@media @media-point-screen {
+			padding: 2.5vw;
+		}
+		.card-item__card:hover &,
+		.card-item__card.is--active &{
+			opacity: 1;
+		}
+	}
+	//изменено через запятую добавлен класс &view-album
+	&view, &view-album{		
 		position: absolute;
 		z-index: 2;
 		bottom: 50%;
@@ -1281,7 +1318,30 @@
 				background-color: @white-ff;
 				transform: scale(1.2);
 			}
-		}	
+		}
+
+		&.is--photo{//изменено добавлен класс
+			z-index: 6;
+			width: 50px;
+			height: 50px;
+			background-color: @b-color-a;
+			bottom: 13px;
+			right: 13px;
+			padding: 12px;
+			transition: @trs-site;
+			transform-origin: bottom right;
+			transform: scale(1);
+			&::before,
+			&::after{display: none;}
+			.card-item__card:hover &,
+			.card-item__card.is--active &{
+				// background-color: @white-ff; изменено удалил
+				transform: scale(1.2);
+			}
+		}		
+	}
+	&view-album{//изменено добавлен класс		
+		bottom: 65%;			
 	}
 	&preview{
 		display: block;
@@ -1424,6 +1484,21 @@
 			color: @black;
 			margin-bottom: 13px;
 		}
+		&.is--album{//изменено добавлен класс
+			transition: @trs-site; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.heading5();
+			font-family: @b-ff;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			padding: 0 23px;
+			height: 110px;
+			@media @media-point-device {
+			height: 145px;
+			}
+		}
 	}
 	&heading-small{
 		transition: @trs-site;
@@ -1467,6 +1542,40 @@
 			margin-bottom: 0;
 			color: @b-color-h;
 			font-weight: 400;
+		}
+	}
+	&photos{//изменено добавлен класс	
+		z-index: 100;
+		color: @b-color;
+		display: block;
+		text-align:left;
+		transition: @trs-site;
+		// font-size: @b-fs - 2;
+		// line-height: @b-lh - 4;
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 25px;
+		@media @media-point-device {
+			padding-left: 0;
+			text-align: center;
+		}
+
+	}
+	&album{//изменено добавлен класс
+		transition: @trs-site;
+		transition: all 0.5s;
+		text-align:left;
+		display: block;
+		z-index: 100;
+		font-size: 30px;
+		line-height:  31px;
+		font-family: @b-ff;
+		padding-bottom: 6px;
+		color: @b-color;
+		max-width: 100%;
+		@media @media-point-device {
+			padding-left: 0;
+			text-align: center;
 		}
 	}
 	&note{
@@ -4125,6 +4234,7 @@ body.rtl .formError .formErrorArrow {
 	}
 }
 .pagination-panel__{
+	
 	&block{
 		padding-bottom: 30px;
 		/*padding-top: 30px;
@@ -4145,7 +4255,16 @@ body.rtl .formError .formErrorArrow {
 		align-items: center;
 		//
 		&.is--center{
-			justify-content: center; 
+			
+			@media @media-point-device {//изменено добавлен padding
+				padding-top: 20px;
+				justify-content: center; 
+			}
+			@media @media-point-screen {//изменено добавлен padding
+				padding-top: 60px;
+				justify-content: flex-start; 
+			}
+			
 		}
 	}
 	&item{

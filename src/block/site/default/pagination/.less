@@ -1,4 +1,5 @@
 .pagination-panel__{
+	
 	&block{
 		padding-bottom: 30px;
 		/*padding-top: 30px;
@@ -19,7 +20,16 @@
 		align-items: center;
 		//
 		&.is--center{
-			justify-content: center; 
+			
+			@media @media-point-device {//изменено добавлен padding
+				padding-top: 20px;
+				justify-content: center; 
+			}
+			@media @media-point-screen {//изменено добавлен padding
+				padding-top: 60px;
+				justify-content: flex-start; 
+			}
+			
 		}
 	}
 	&item{

@@ -37,6 +37,7 @@
 		"reviews":"/reviews.html",
 		"contacts":"/contacts.html",
 		"gallery":"/gallery.html",
+		"album_card":"/album-card.html",
 		"404":"/404.html",
 		"sitemap":"/sitemap.html",
 		"style":"/style.html",
