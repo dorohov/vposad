@@ -2,7 +2,7 @@
 //2gis map - удалить если не используется
 var twoGis_map_container = 'map-2gis';
 var twoGis_cont = $('#' + twoGis_map_container);  
-var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
+// var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
 var CMS__TPL_PATH = '';  
 if(twoGis_cont.length) { 
 	var twoGis_map_data = JSON.parse(twoGis_cont.attr('data-map') || '{}');

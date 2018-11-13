@@ -6,10 +6,12 @@ $(function() {
 	var slider = $('[data-slider-slick="slick-slider"]');	
 	var CMS__TPL_PATH = '/local/templates/azbn7theme';  
 	//var CMS__TPL_PATH = '/vposad';  
-	//var CMS__TPL_PATH = '';  
+	var CMS__TPL_PATH = '';  
 	//local
-	var prevArrow = '<button type="button" class="btn-nav__item  is--prev  is--slick"><span class="sr-only">Предыдущий слайд</span><svg class="icon-svg icon-icon-prev" role="img"><use xlink:href="'+ CMS__TPL_PATH +'/img/svg/sprite.svg#icon-prev"></use></svg></button>';
-	var nextArrow = '<button type="button" class="btn-nav__item  is--next  is--slick"><span class="sr-only">Следующий слайд</span><svg class="icon-svg icon-icon-next" role="img"><use xlink:href="'+ CMS__TPL_PATH +'/img/svg/sprite.svg#icon-next"></use></svg></button>';
+	var prevArrow = '<button type="button" class="btn-nav__item  is--prev  is--slick"><span class="sr-only">Предыдущий слайд</span><svg class="icon-svg icon-icon-prev" role="img"><use xlink:href="'+ CMS__TPL_PATH +'img/svg/sprite.svg#icon-prev"></use></svg></button>';
+	var nextArrow = '<button type="button" class="btn-nav__item  is--next  is--slick"><span class="sr-only">Следующий слайд</span><svg class="icon-svg icon-icon-next" role="img"><use xlink:href="'+ CMS__TPL_PATH +'img/svg/sprite.svg#icon-next"></use></svg></button>';
+	var prevArrowHeader = '<button type="button" class="btn-nav__item  is--prev  is--slick is--fonHeader"><span class="sr-only">Предыдущий слайд</span><svg class="icon-svg icon-icon-prev" role="img"><use xlink:href="'+ CMS__TPL_PATH +'img/svg/sprite.svg#icon-prev"></use></svg></button>';
+	var nextArrowHeader = '<button type="button" class="btn-nav__item  is--next  is--slick is--fonHeader"><span class="sr-only">Следующий слайд</span><svg class="icon-svg icon-icon-next" role="img"><use xlink:href="'+ CMS__TPL_PATH +'img/svg/sprite.svg#icon-next"></use></svg></button>';
 	var prevArrowGallery = $('.btn-nav__item.is--prev.is--gallery');	
 	var nextArrowGallery = $('.btn-nav__item.is--next.is--gallery');
 	
@@ -23,8 +25,8 @@ $(function() {
 		autoplay: true,
 		// изменено с 4000 до 3000
   		autoplaySpeed: 3000,
-		prevArrow: prevArrow,
-		nextArrow: nextArrow,
+		prevArrow: prevArrowHeader,
+		nextArrow: nextArrowHeader,
 		fade: true
 	});
 	header_page.slick({

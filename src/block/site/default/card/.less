@@ -140,6 +140,7 @@
 		}
 	}
 	//изменено через запятую добавлен класс &view-album
+
 	&view, &view-album{		
 		position: absolute;
 		z-index: 2;
@@ -151,7 +152,8 @@
 		background-color: @b-color-a;
 		padding: 20px;
 		border-radius: 50%;
-		color: @b-color;
+		//color: @b-color;
+		color: @white;
 		svg{
 			display: block;
 			position: relative;
@@ -221,6 +223,7 @@
 			}
 		}		
 	}
+	&view-album{color: @b-color;}
 	&view-album{//изменено добавлен класс		
 		bottom: 65%;			
 	}
@@ -369,7 +372,8 @@
 			transition: @trs-site; 
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			//justify-content: center;
+			justify-content: space-between;
 			.heading5();
 			font-family: @b-ff;
 			margin-top: 20px;

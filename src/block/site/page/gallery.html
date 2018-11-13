@@ -13,7 +13,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома Название альбома Название альбома"
@@ -24,7 +24,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома"
@@ -35,7 +35,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома"
@@ -46,7 +46,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома"
@@ -57,7 +57,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома"
@@ -68,7 +68,7 @@
 				[[azbntple 
 					tpl="/src/block/site/default/card/card-album.html"
 					block_prefix="card-item__" 
-					block_mod="is--album"
+					block_mod="is--album is--jcsb"
 					block_link="{{page.album_card}}"
 					block_preview="http://via.placeholder.com/500x300"
 					block_heading="Название альбома"
@@ -76,6 +76,21 @@
 				]]
 			</div>
 		</div>
-
+	</div>
+	<div class="{{content_prefix}}container container  is--full">
+		<div class="{{block_prefix}}panel  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_mod="{{block_mod}}"
+				header_level="{{block_heading_level}}"
+				header="Видеогалерея"
+			]]
+		</div>
+		[[azbntple  
+			tpl="/src/block/site/page/panel-video.html"
+			content_prefix="content-block__"       
+			content_mod="  " 
+		]]
 	</div>
 </main>
