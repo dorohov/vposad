@@ -43,7 +43,7 @@
 		"style":"style.html",
 		"agreement":"agreement.html"
 	},
-	"url-path":"/",	                           
+	"url-path":"/vposad/",	                           
 	"url-path-css":"css",
 	"url-path-img":"img",
 	"url-path-video":"video",
